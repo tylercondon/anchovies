@@ -1,12 +1,11 @@
-# Voice recognition
+# Voice Recognition
 
-##Problem to solve
+## Problem to Solve
 
-Usage for this code is when you are going to bed but you do not want to climb out off bed and flip the switch with this code you can say a keyword ex. anchovies.
-you will then say your'e command ex. Turn off lights. Turn on lights. and this is the usage
-what I have done today is I downloaded the code for the raspberry pi but we have to format the code that the raspberry pi can hear us end off Day 1.
+Usage for this code is when you are going to bed but you do not want to climb out of bed and flip the switch with this code you can say a keyword ex. anchovies.
+you will then say your'e command example. Turn off lights. Turn on lights. and this is the usage
 
-##Goal 
+## Goal 
 
 What my goal is to find a better way of home lighting when this experiment is done I hope that I am able to continue to work on this project. And make my program be able to control a entire house.
 
@@ -23,9 +22,9 @@ What my goal is to find a better way of home lighting when this experiment is do
 It works by you saying a key word then you say a command which goes to Google Speech API. Google Speech API
 then gives you back text to use in the program.
 
-I reachered on how to get this to work together and found PiAUISuite a program that triggers on a keyword and calls commands that you create. Here is a link to the GitHub project: https://github.com/StevenHickson/PiAUISuite
+I researched on how to get this to work together and found PiAUISuite a program that triggers on a keyword and calls commands that you create. Here is a link to the GitHub project: https://github.com/StevenHickson/PiAUISuite
 
-Here is a digram to show how it works:
+Here is a diagram to show how it works:
 
 ![PiAUISuite](drawings/PiAUISuite.png)
 
@@ -34,7 +33,7 @@ There were many software pieces I had to learn to use, or create myself to make 
 ### Google Speech API
 Google Speech API is a web site that turns speech into text and text into speech.
 
-### arecord 
+### Arecord 
 Arecord records audio file from the microphone.
 
 ### PiAUISuite
@@ -87,11 +86,11 @@ Used to output a high or low voltage to a pin in the circuit for the LED.
 ## Work Log 
 This is the steps of what I have done over three days.
 ### Day 1
-What I am doing is fixing a bug in the program.
+I had to download a bunch of programs. That took hours then I started to reasherch on how to use the raspberry pi and I found diy hacking that had a great tutorial on how to bild a voice recognition program but it had bugs and I am still fixing them.
 ### Day 2
-Today I have been writing more of my report.
+Today I am writing more of my report. the voice recognition is working. but I haven't got the lights to work yet. 
 ### Day 3 
-Today I finished the program and I am just finishing up the report.
+Today I finished the program the light works and I am just finishing up the report.
 
 ## Conclusion
 I have finished project anchovies. (That is what I called it ). It was a complete success. I was able to make an LED light turn on with a voice command. It was hard but I know that it paid off. Thank you to my dad he is a software engineer and helped me a lot during the experiment.
