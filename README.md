@@ -22,8 +22,10 @@ What my goal is to find a better way of home lighting when this experiment is do
 6. a usb key bord
 
 ### How it works
-It works bye you saying a key word then you say a command witch goes to the usb microphone witch goes to google translate
-then then activate the bash command.
+It works bye you saying a key word then you say a command witch goes to the USB microphone witch goes to Google translate. Google translate
+then sends back the data  the bash command. A 
+
+![PiAUISuite](drawings/PiAUISuite.png)
 
 
 ##work log 
@@ -31,4 +33,9 @@ This is the steps of what I have done over three days
 ###Day 1
 What I am doing is fixing a bug in the program.
 ###Day 2
-Today I have been writing more of my report. It has been hard doing what I have been trying to fix the bug.
+Today I have been writing more of my report.
+###Day 3 
+Today I finished the program and I am just finishing up the report.
+
+## conclusion
+I have finished project anchovies. (That is what I called it ). It was a complete success. I was able to make an LED light turn on with a voice command. It was hard but I know that it paid off. Thank you to my dad he is a software engineer and helped me a lot during the experiment.
