@@ -9,10 +9,8 @@ what I have done today is I downloaded the code for the raspberry pi but we have
 ##Goal 
 
 What my goal is to find a better way of home lighting when this experiment is done I hope that I am able to continue to work on this project. And make my program be able to control a entire house.
- 
-## plan
 
-### Materials
+## Materials
 
 1. raspberry pi
 2. HDMI chord
@@ -21,21 +19,79 @@ What my goal is to find a better way of home lighting when this experiment is do
 5. a mouse
 6. a usb key bord
 
-### How it works
-It works bye you saying a key word then you say a command witch goes to the USB microphone witch goes to Google translate. Google translate
-then sends back the data  the bash command. A 
+## How it works
+It works by you saying a key word then you say a command which goes to Google Speech API. Google Speech API
+then gives you back text to use in the program.
+
+I reachered on how to get this to work together and found PiAUISuite a program that triggers on a keyword and calls commands that you create. Here is a link to the GitHub project: https://github.com/StevenHickson/PiAUISuite
+
+Here is a digram to show how it works:
 
 ![PiAUISuite](drawings/PiAUISuite.png)
 
+There were many software pieces I had to learn to use, or create myself to make this work.
 
-##work log 
-This is the steps of what I have done over three days
-###Day 1
+### Google Speech API
+Google Speech API is a web site that turns speech into text and text into speech.
+
+### arecord 
+Arecord records audio file from the microphone.
+
+### PiAUISuite
+PiAUISuite is a program that trigger on a keyword on a key word and calls commands that you create.
+
+### led_on
+Script to say "turning on lights" and calls the `LED_ON.py` program. Notice the call to `tts`. That's a small program that calls the Google Speech API and turns text into audio.
+
+```bash
+#!/bin/bash
+tts "Turning on lights!"
+sudo python /home/pi/LED_ON.py
+```
+
+### led_off
+Script to say "turning off lights" and calls the `LED_OFF.py` program.
+
+```bash
+#!/bin/bash
+tts "Turning off lights!"
+sudo python /home/pi/LED_OFF.py
+```
+
+### Python and Python Code
+Python runs the code to control the GPIO. Here's the Python program, `LED_ON.py`, that turns on the LED by setting the GPIO high:
+
+```python
+import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+GPIO.setup(18,GPIO.OUT)
+print "LED on"
+GPIO.output(18,GPIO.HIGH)
+```
+
+The code, `LED_OFF.py`, that turns the LED off by setting the GPIO low:
+
+```python
+import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+GPIO.setup(18,GPIO.OUT)
+print "LED off"
+GPIO.output(18,GPIO.LOW)
+```
+
+### GPIO
+Used to output a high or low voltage to a pin in the circuit for the LED.
+
+## Work Log 
+This is the steps of what I have done over three days.
+### Day 1
 What I am doing is fixing a bug in the program.
-###Day 2
+### Day 2
 Today I have been writing more of my report.
-###Day 3 
+### Day 3 
 Today I finished the program and I am just finishing up the report.
 
-## conclusion
+## Conclusion
 I have finished project anchovies. (That is what I called it ). It was a complete success. I was able to make an LED light turn on with a voice command. It was hard but I know that it paid off. Thank you to my dad he is a software engineer and helped me a lot during the experiment.
