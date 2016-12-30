@@ -23,11 +23,11 @@ What my goal is to find a better way of home lighting when this experiment is do
 It works by you saying a key word then you say a command which goes to Google Speech API. Google Speech API
 then gives you back text to use in the program.
 
-I researched on how to get this to work together and found PiAUISuite a program that triggers on a keyword and calls commands that you create. Here is a link to the GitHub project: https://github.com/StevenHickson/PiAUISuite
+I researched on how to get this to work together and found PiAUISuite a program that triggers on a keyword and calls commands that you create. Here is a link to the GitHub project: [https://github.com/StevenHickson/PiAUISuite](https://github.com/StevenHickson/PiAUISuite)
 
 Here is a diagram to show how it works:
 
-![PiAUISuite](https://github.com/tylercondon/anchovies/blob/master/drawings/PiAUISuite.png)
+![PiAUISuite](https://github.com/tylercondon/anchovies/raw/master/drawings/PiAUISuite.png)
 
 There were many software pieces I had to learn to use, or create myself to make this work.
 
