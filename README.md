@@ -37,12 +37,17 @@ Google Speech API is a web site that turns speech into text and text into speech
 Arecord records audio file from the microphone.
 
 ### PiAUISuite
-PiAUISuite is a program that trigger on a keyword on a key word and calls commands that you create.
+PiAUISuite is a program that trigger on a keyword on a key word and calls commands that you create. Here's a snippet from the configuration file, `.commands.conf` that calls the commands:
+
+```
+lights on==/home/pi/led_on
+lights off==/home/pi/led_off
+```
 
 ### led_on
 Script to say "turning on lights" and calls the `LED_ON.py` program. Notice the call to `tts`. That's a small program that calls the Google Speech API and turns text into audio.
 
-```bash
+```
 #!/bin/bash
 tts "Turning on lights!"
 sudo python /home/pi/LED_ON.py
@@ -51,7 +56,7 @@ sudo python /home/pi/LED_ON.py
 ### led_off
 Script to say "turning off lights" and calls the `LED_OFF.py` program.
 
-```bash
+```
 #!/bin/bash
 tts "Turning off lights!"
 sudo python /home/pi/LED_OFF.py
