@@ -27,7 +27,7 @@ I researched on how to get this to work together and found PiAUISuite a program 
 
 Here is a diagram to show how it works:
 
-![PiAUISuite](drawings/PiAUISuite.png)
+![PiAUISuite](https://github.com/tylercondon/anchovies/blob/master/drawings/PiAUISuite.png)
 
 There were many software pieces I had to learn to use, or create myself to make this work.
 
