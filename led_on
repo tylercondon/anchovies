@@ -1,0 +1,3 @@
+#!/bin/bash
+tts "Turning on lights!"
+sudo python /home/pi/LED_ON.py
